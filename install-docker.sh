@@ -16,10 +16,10 @@ su - ${USER}
 
 docker run hello-world
 
-sudo adduser nithinkadumberi
-sudo usermod -aG adm nithinkadumberi 
-sudo usermod -aG sudo nithinkadumberi 
-sudo usermod -aG docker nithinkadumberi
-id nithinkadumberi
+sudo adduser nithin
+sudo usermod -aG adm nithin
+sudo usermod -aG sudo nithin
+sudo usermod -aG docker nithin
+id nithin
 
 
