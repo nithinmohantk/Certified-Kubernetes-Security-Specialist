@@ -73,5 +73,16 @@ containerd config default>/etc/containerd/config.toml
 
 # restart containerd
 sudo systemctl restart containerd
+
+#ctr plugin ls showed that cri plugin was in error state with default configuration. Just a blank config with systemd_cgroup fixed issue for me:
+cat > /etc/containerd/config.toml <<EOF
+[plugins."io.containerd.grpc.v1.cri"]
+  systemd_cgroup = true
+EOF
+systemctl restart containerd
+
 sudo systemctl enable containerd
 systemctl status  containerd
+
+
+
