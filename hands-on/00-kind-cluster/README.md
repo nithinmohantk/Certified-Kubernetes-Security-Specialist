@@ -3,6 +3,10 @@
 - Ensure you have docker installed
 - [install kind](https://kind.sigs.k8s.io/docs/user/quick-start/)
 - create a Kind three cluster nodes config file without enabling the CNI plugin for future exercies **kind-1m3w-nocni.yaml
+
+```sh
+kind create cluster --config=/kind-1m3w-nocni.yaml
+```
  
  ```yaml
  kind: Cluster
