@@ -1,5 +1,7 @@
 declare -a fonts=(
+    AnonymousPro
     BitstreamVeraSansMono
+    CascadiaCode
     CodeNewRoman
     DroidSansMono
     FiraCode
@@ -17,6 +19,8 @@ declare -a fonts=(
     SpaceMono
     Ubuntu
     UbuntuMono
+    Terminus
+    Tinos
 )
 
 version='2.1.0'
